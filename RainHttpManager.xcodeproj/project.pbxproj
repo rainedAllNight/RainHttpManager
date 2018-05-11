@@ -130,11 +130,7 @@
 				76609CFB20A3ED6C00DC898A /* ViewController.swift */,
 				76609D3320A4555C00DC898A /* TestModel.swift */,
 				76609D3520A4560D00DC898A /* ApiTest.swift */,
-				76609D2720A3EEA100DC898A /* RainHttpManager.swift */,
-				76609D2D20A3F54900DC898A /* RainHttpError.swift */,
-				76609D3120A430E300DC898A /* RainHttpResponse.swift */,
-				76609D2920A3EFBB00DC898A /* UIViewControllerHelper.swift */,
-				76609D2B20A3F04E00DC898A /* UIWindowHelper.swift */,
+				76609D3820A54A3300DC898A /* HttpManager */,
 				76609CFD20A3ED6C00DC898A /* Main.storyboard */,
 				76609D0020A3ED7000DC898A /* Assets.xcassets */,
 				76609D0220A3ED7000DC898A /* LaunchScreen.storyboard */,
@@ -159,6 +155,18 @@
 				76609D1B20A3ED7000DC898A /* Info.plist */,
 			);
 			path = RainHttpManagerUITests;
+			sourceTree = "<group>";
+		};
+		76609D3820A54A3300DC898A /* HttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				76609D2720A3EEA100DC898A /* RainHttpManager.swift */,
+				76609D2D20A3F54900DC898A /* RainHttpError.swift */,
+				76609D3120A430E300DC898A /* RainHttpResponse.swift */,
+				76609D2920A3EFBB00DC898A /* UIViewControllerHelper.swift */,
+				76609D2B20A3F04E00DC898A /* UIWindowHelper.swift */,
+			);
+			path = HttpManager;
 			sourceTree = "<group>";
 		};
 		9F9C3ED14E03CB2F68D4FA55 /* Pods */ = {
@@ -557,7 +565,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"DDEBUG\"";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuaiyixing.RainHttpManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

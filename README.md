@@ -1,6 +1,6 @@
 # RainHttpManager
 
-## 使用 Moya + ObjectMapper/Codable/SwiftJSON (三选一)封装的一个网络层
+## 使用 Moya + ObjectMapper/Codable/SwiftyJSON (三选一)封装的一个网络层
 
 ## 如何使用
 
@@ -22,7 +22,7 @@
         self.showErrorHUD(error.message)
     }
     
-    //model list
+    //3.model list
     RainHttpManager<ApiTest, TestModel>.requestModelList(.fetchTestModelList(pageIndex: 0, pageSize: 10), authType: .basic, success: { (models) in
         guard let models = models else {
             return
