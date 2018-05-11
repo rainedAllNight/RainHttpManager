@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0309EAB5F93BBF9142EE6F58 /* Pods_RainHttpManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8269AB4AA2ACEF8ACE4E42A /* Pods_RainHttpManager.framework */; };
+		76609CFA20A3ED6C00DC898A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609CF920A3ED6C00DC898A /* AppDelegate.swift */; };
+		76609CFC20A3ED6C00DC898A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609CFB20A3ED6C00DC898A /* ViewController.swift */; };
+		76609CFF20A3ED6C00DC898A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76609CFD20A3ED6C00DC898A /* Main.storyboard */; };
+		76609D0120A3ED7000DC898A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76609D0020A3ED7000DC898A /* Assets.xcassets */; };
+		76609D0420A3ED7000DC898A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76609D0220A3ED7000DC898A /* LaunchScreen.storyboard */; };
+		76609D0F20A3ED7000DC898A /* RainHttpManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D0E20A3ED7000DC898A /* RainHttpManagerTests.swift */; };
+		76609D1A20A3ED7000DC898A /* RainHttpManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D1920A3ED7000DC898A /* RainHttpManagerUITests.swift */; };
+		76609D2820A3EEA100DC898A /* RainHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D2720A3EEA100DC898A /* RainHttpManager.swift */; };
+		76609D2A20A3EFBB00DC898A /* UIViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D2920A3EFBB00DC898A /* UIViewControllerHelper.swift */; };
+		76609D2C20A3F04E00DC898A /* UIWindowHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D2B20A3F04E00DC898A /* UIWindowHelper.swift */; };
+		76609D2E20A3F54A00DC898A /* RainHttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D2D20A3F54900DC898A /* RainHttpError.swift */; };
+		76609D3220A430E300DC898A /* RainHttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D3120A430E300DC898A /* RainHttpResponse.swift */; };
+		76609D3420A4555C00DC898A /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D3320A4555C00DC898A /* TestModel.swift */; };
+		76609D3620A4560D00DC898A /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76609D3520A4560D00DC898A /* ApiTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76609D0B20A3ED7000DC898A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76609CEE20A3ED6C00DC898A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76609CF520A3ED6C00DC898A;
+			remoteInfo = RainHttpManager;
+		};
+		76609D1620A3ED7000DC898A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76609CEE20A3ED6C00DC898A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76609CF520A3ED6C00DC898A;
+			remoteInfo = RainHttpManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CF5A09509846250EDBA36CE /* Pods-RainHttpManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainHttpManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainHttpManager/Pods-RainHttpManager.release.xcconfig"; sourceTree = "<group>"; };
+		76609CF620A3ED6C00DC898A /* RainHttpManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainHttpManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76609CF920A3ED6C00DC898A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76609CFB20A3ED6C00DC898A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76609CFE20A3ED6C00DC898A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76609D0020A3ED7000DC898A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76609D0320A3ED7000DC898A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76609D0520A3ED7000DC898A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76609D0A20A3ED7000DC898A /* RainHttpManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainHttpManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76609D0E20A3ED7000DC898A /* RainHttpManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainHttpManagerTests.swift; sourceTree = "<group>"; };
+		76609D1020A3ED7000DC898A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76609D1520A3ED7000DC898A /* RainHttpManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainHttpManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76609D1920A3ED7000DC898A /* RainHttpManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainHttpManagerUITests.swift; sourceTree = "<group>"; };
+		76609D1B20A3ED7000DC898A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76609D2720A3EEA100DC898A /* RainHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainHttpManager.swift; sourceTree = "<group>"; };
+		76609D2920A3EFBB00DC898A /* UIViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerHelper.swift; sourceTree = "<group>"; };
+		76609D2B20A3F04E00DC898A /* UIWindowHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowHelper.swift; sourceTree = "<group>"; };
+		76609D2D20A3F54900DC898A /* RainHttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainHttpError.swift; sourceTree = "<group>"; };
+		76609D3120A430E300DC898A /* RainHttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainHttpResponse.swift; sourceTree = "<group>"; };
+		76609D3320A4555C00DC898A /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		76609D3520A4560D00DC898A /* ApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
+		A8269AB4AA2ACEF8ACE4E42A /* Pods_RainHttpManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainHttpManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49AB86EFE92E8EEC6033874 /* Pods-RainHttpManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainHttpManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainHttpManager/Pods-RainHttpManager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76609CF320A3ED6C00DC898A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0309EAB5F93BBF9142EE6F58 /* Pods_RainHttpManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76609D0720A3ED7000DC898A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76609D1220A3ED7000DC898A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		316322054A489D613FBB5E01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8269AB4AA2ACEF8ACE4E42A /* Pods_RainHttpManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76609CED20A3ED6C00DC898A = {
+			isa = PBXGroup;
+			children = (
+				76609CF820A3ED6C00DC898A /* RainHttpManager */,
+				76609D0D20A3ED7000DC898A /* RainHttpManagerTests */,
+				76609D1820A3ED7000DC898A /* RainHttpManagerUITests */,
+				76609CF720A3ED6C00DC898A /* Products */,
+				9F9C3ED14E03CB2F68D4FA55 /* Pods */,
+				316322054A489D613FBB5E01 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76609CF720A3ED6C00DC898A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76609CF620A3ED6C00DC898A /* RainHttpManager.app */,
+				76609D0A20A3ED7000DC898A /* RainHttpManagerTests.xctest */,
+				76609D1520A3ED7000DC898A /* RainHttpManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76609CF820A3ED6C00DC898A /* RainHttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				76609CF920A3ED6C00DC898A /* AppDelegate.swift */,
+				76609CFB20A3ED6C00DC898A /* ViewController.swift */,
+				76609D3320A4555C00DC898A /* TestModel.swift */,
+				76609D3520A4560D00DC898A /* ApiTest.swift */,
+				76609D2720A3EEA100DC898A /* RainHttpManager.swift */,
+				76609D2D20A3F54900DC898A /* RainHttpError.swift */,
+				76609D3120A430E300DC898A /* RainHttpResponse.swift */,
+				76609D2920A3EFBB00DC898A /* UIViewControllerHelper.swift */,
+				76609D2B20A3F04E00DC898A /* UIWindowHelper.swift */,
+				76609CFD20A3ED6C00DC898A /* Main.storyboard */,
+				76609D0020A3ED7000DC898A /* Assets.xcassets */,
+				76609D0220A3ED7000DC898A /* LaunchScreen.storyboard */,
+				76609D0520A3ED7000DC898A /* Info.plist */,
+			);
+			path = RainHttpManager;
+			sourceTree = "<group>";
+		};
+		76609D0D20A3ED7000DC898A /* RainHttpManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				76609D0E20A3ED7000DC898A /* RainHttpManagerTests.swift */,
+				76609D1020A3ED7000DC898A /* Info.plist */,
+			);
+			path = RainHttpManagerTests;
+			sourceTree = "<group>";
+		};
+		76609D1820A3ED7000DC898A /* RainHttpManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76609D1920A3ED7000DC898A /* RainHttpManagerUITests.swift */,
+				76609D1B20A3ED7000DC898A /* Info.plist */,
+			);
+			path = RainHttpManagerUITests;
+			sourceTree = "<group>";
+		};
+		9F9C3ED14E03CB2F68D4FA55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F49AB86EFE92E8EEC6033874 /* Pods-RainHttpManager.debug.xcconfig */,
+				6CF5A09509846250EDBA36CE /* Pods-RainHttpManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76609CF520A3ED6C00DC898A /* RainHttpManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76609D1E20A3ED7000DC898A /* Build configuration list for PBXNativeTarget "RainHttpManager" */;
+			buildPhases = (
+				717A723E6870AFDEB963F514 /* [CP] Check Pods Manifest.lock */,
+				76609CF220A3ED6C00DC898A /* Sources */,
+				76609CF320A3ED6C00DC898A /* Frameworks */,
+				76609CF420A3ED6C00DC898A /* Resources */,
+				2CEDAB5E8FA43F64E53AEC4D /* [CP] Embed Pods Frameworks */,
+				6CD31241AFB5F86CA406753A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainHttpManager;
+			productName = RainHttpManager;
+			productReference = 76609CF620A3ED6C00DC898A /* RainHttpManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76609D0920A3ED7000DC898A /* RainHttpManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76609D2120A3ED7000DC898A /* Build configuration list for PBXNativeTarget "RainHttpManagerTests" */;
+			buildPhases = (
+				76609D0620A3ED7000DC898A /* Sources */,
+				76609D0720A3ED7000DC898A /* Frameworks */,
+				76609D0820A3ED7000DC898A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76609D0C20A3ED7000DC898A /* PBXTargetDependency */,
+			);
+			name = RainHttpManagerTests;
+			productName = RainHttpManagerTests;
+			productReference = 76609D0A20A3ED7000DC898A /* RainHttpManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76609D1420A3ED7000DC898A /* RainHttpManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76609D2420A3ED7000DC898A /* Build configuration list for PBXNativeTarget "RainHttpManagerUITests" */;
+			buildPhases = (
+				76609D1120A3ED7000DC898A /* Sources */,
+				76609D1220A3ED7000DC898A /* Frameworks */,
+				76609D1320A3ED7000DC898A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76609D1720A3ED7000DC898A /* PBXTargetDependency */,
+			);
+			name = RainHttpManagerUITests;
+			productName = RainHttpManagerUITests;
+			productReference = 76609D1520A3ED7000DC898A /* RainHttpManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76609CEE20A3ED6C00DC898A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = luowei;
+				TargetAttributes = {
+					76609CF520A3ED6C00DC898A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					76609D0920A3ED7000DC898A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 76609CF520A3ED6C00DC898A;
+					};
+					76609D1420A3ED7000DC898A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 76609CF520A3ED6C00DC898A;
+					};
+				};
+			};
+			buildConfigurationList = 76609CF120A3ED6C00DC898A /* Build configuration list for PBXProject "RainHttpManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76609CED20A3ED6C00DC898A;
+			productRefGroup = 76609CF720A3ED6C00DC898A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76609CF520A3ED6C00DC898A /* RainHttpManager */,
+				76609D0920A3ED7000DC898A /* RainHttpManagerTests */,
+				76609D1420A3ED7000DC898A /* RainHttpManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76609CF420A3ED6C00DC898A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76609D0420A3ED7000DC898A /* LaunchScreen.storyboard in Resources */,
+				76609D0120A3ED7000DC898A /* Assets.xcassets in Resources */,
+				76609CFF20A3ED6C00DC898A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76609D0820A3ED7000DC898A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76609D1320A3ED7000DC898A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CEDAB5E8FA43F64E53AEC4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RainHttpManager/Pods-RainHttpManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainHttpManager/Pods-RainHttpManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD31241AFB5F86CA406753A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainHttpManager/Pods-RainHttpManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		717A723E6870AFDEB963F514 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainHttpManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76609CF220A3ED6C00DC898A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76609D2C20A3F04E00DC898A /* UIWindowHelper.swift in Sources */,
+				76609D2A20A3EFBB00DC898A /* UIViewControllerHelper.swift in Sources */,
+				76609D3220A430E300DC898A /* RainHttpResponse.swift in Sources */,
+				76609D3420A4555C00DC898A /* TestModel.swift in Sources */,
+				76609D2E20A3F54A00DC898A /* RainHttpError.swift in Sources */,
+				76609CFC20A3ED6C00DC898A /* ViewController.swift in Sources */,
+				76609CFA20A3ED6C00DC898A /* AppDelegate.swift in Sources */,
+				76609D2820A3EEA100DC898A /* RainHttpManager.swift in Sources */,
+				76609D3620A4560D00DC898A /* ApiTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76609D0620A3ED7000DC898A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76609D0F20A3ED7000DC898A /* RainHttpManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76609D1120A3ED7000DC898A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76609D1A20A3ED7000DC898A /* RainHttpManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76609D0C20A3ED7000DC898A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76609CF520A3ED6C00DC898A /* RainHttpManager */;
+			targetProxy = 76609D0B20A3ED7000DC898A /* PBXContainerItemProxy */;
+		};
+		76609D1720A3ED7000DC898A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76609CF520A3ED6C00DC898A /* RainHttpManager */;
+			targetProxy = 76609D1620A3ED7000DC898A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76609CFD20A3ED6C00DC898A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76609CFE20A3ED6C00DC898A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76609D0220A3ED7000DC898A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76609D0320A3ED7000DC898A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76609D1C20A3ED7000DC898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76609D1D20A3ED7000DC898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76609D1F20A3ED7000DC898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49AB86EFE92E8EEC6033874 /* Pods-RainHttpManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVG6KC69KQ;
+				INFOPLIST_FILE = RainHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"DDEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaiyixing.RainHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76609D2020A3ED7000DC898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF5A09509846250EDBA36CE /* Pods-RainHttpManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVG6KC69KQ;
+				INFOPLIST_FILE = RainHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaiyixing.RainHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76609D2220A3ED7000DC898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVG6KC69KQ;
+				INFOPLIST_FILE = RainHttpManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaiyixing.RainHttpManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainHttpManager.app/RainHttpManager";
+			};
+			name = Debug;
+		};
+		76609D2320A3ED7000DC898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVG6KC69KQ;
+				INFOPLIST_FILE = RainHttpManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaiyixing.RainHttpManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainHttpManager.app/RainHttpManager";
+			};
+			name = Release;
+		};
+		76609D2520A3ED7000DC898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVG6KC69KQ;
+				INFOPLIST_FILE = RainHttpManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaiyixing.RainHttpManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RainHttpManager;
+			};
+			name = Debug;
+		};
+		76609D2620A3ED7000DC898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVG6KC69KQ;
+				INFOPLIST_FILE = RainHttpManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaiyixing.RainHttpManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RainHttpManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76609CF120A3ED6C00DC898A /* Build configuration list for PBXProject "RainHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76609D1C20A3ED7000DC898A /* Debug */,
+				76609D1D20A3ED7000DC898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76609D1E20A3ED7000DC898A /* Build configuration list for PBXNativeTarget "RainHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76609D1F20A3ED7000DC898A /* Debug */,
+				76609D2020A3ED7000DC898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76609D2120A3ED7000DC898A /* Build configuration list for PBXNativeTarget "RainHttpManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76609D2220A3ED7000DC898A /* Debug */,
+				76609D2320A3ED7000DC898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76609D2420A3ED7000DC898A /* Build configuration list for PBXNativeTarget "RainHttpManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76609D2520A3ED7000DC898A /* Debug */,
+				76609D2620A3ED7000DC898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76609CEE20A3ED6C00DC898A /* Project object */;
+}
