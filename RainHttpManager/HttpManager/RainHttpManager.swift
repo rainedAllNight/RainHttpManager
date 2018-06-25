@@ -32,7 +32,6 @@ public class RainHttpManager<RainTarget: TargetType, M> {
     
     // MARK: - private method
     
-    
     /// 基础请求方法
     ///
     /// - Parameters:
@@ -44,7 +43,7 @@ public class RainHttpManager<RainTarget: TargetType, M> {
         let completion = {(result: Result<Moya.Response, MoyaError>) in
             switch result {
             case let .success(response):
-                let responseData = RainHttpResponse.init(response.data)
+                let responseData = RainHttpResponse(response.data)
                 do {
                     let _ = try response.filterSuccessfulStatusCodes()
                     success?(responseData)
@@ -54,7 +53,7 @@ public class RainHttpManager<RainTarget: TargetType, M> {
                 
             case let .failure(error):
                 if let data = error.response?.data {
-                    let responseData = RainHttpResponse.init(data)
+                    let responseData = RainHttpResponse(data)
                     failure?(responseData.error)
                 } else {
                     failure?(RainHttpError.other(message: error.localizedDescription, code: (error as NSError).code))
@@ -65,7 +64,6 @@ public class RainHttpManager<RainTarget: TargetType, M> {
         let provider = getProvider(authType)
         provider.request(target, completion: completion)
     }
-    
     
     /// 获取 MoyaProvider
     ///
@@ -122,7 +120,6 @@ extension RainHttpManager where M: Mappable {
             failure?(error)
         }
     }
-    
     
     /// modelList回调的方式请求数据
     ///
@@ -265,9 +262,7 @@ private final class NetworkLoggerPlugin<RainTarget: TargetType>: PluginType {
         Method: \(target.method)
         Parameter: \(target.task)
         Header: \(request.request?.allHTTPHeaderFields ?? [:])
-        
         """
-        
         print(requestLogString)
     }
     
@@ -302,7 +297,6 @@ private final class NetworkLoggerPlugin<RainTarget: TargetType>: PluginType {
             ErrorCode: "\((error as NSError).code)"
             ErrorMsg: "\(error.localizedDescription)"
             """
-            
             if let errorData = error.response?.data {
                 failureLogString += """
                 ErrorResponseData: "\(errorData)"
@@ -357,7 +351,7 @@ public extension TargetType {
     // MARK: - 通用参数统一处理
     
     var baseURL: URL {
-        return URL(string:"baseURL")!
+        return URL(string:"your baseURL")!
     }
     
     var headers : [String : String]? {

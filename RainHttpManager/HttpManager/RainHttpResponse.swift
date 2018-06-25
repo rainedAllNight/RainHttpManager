@@ -82,7 +82,7 @@ extension RainHttpResponse {
     
     // MARK: - Codable方式解析
     
-    func decodeToModel<Model: Codable>() throws -> Model? {
+    func decodeToObject<Model: Codable>() throws -> Model? {
         do {
             let model = try JSONDecoder().decode(Model.self, from: self.json.rawData())
             return model
@@ -91,7 +91,7 @@ extension RainHttpResponse {
         }
     }
     
-    func decodeToModelList<Model: Codable>() throws -> [Model]? {
+    func decodeToObjectArray<Model: Codable>() throws -> [Model]? {
         do {
             let models = try JSONDecoder().decode([Model].self, from: self.json.rawData())
             return models
